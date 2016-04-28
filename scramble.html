@@ -29,9 +29,10 @@
 
             //  // prompt the user to guess the original word when given the scrambled word
             var answer = prompt("Your word is: " + randomScrambled + "." + " Unscramble it!");
+          
             // If the user guesses wrong, tell them they were wrong and the right word.
-            
-            if (answer === randomName){
+
+            if (answer.toLowerCase() === randomName){
                 alert("Great! You guessed it!");
             } else {
                 alert("Nope! That's wrong! The word is: " + randomScrambled);
